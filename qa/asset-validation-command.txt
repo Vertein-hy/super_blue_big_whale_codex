@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_frames_verified": 648,
+  "errors": [],
+  "warnings": [
+    "V1 compatibility atlas: no V2 16-direction look poses.",
+    "Left movement is a mirrored right sequence; asymmetric accessories swap sides.",
+    "Working/review reuse different portions of idle art; these are not newly drawn task actions.",
+    "Native client state triggers and timing have not been tested on a real Codex Desktop instance."
+  ]
+}

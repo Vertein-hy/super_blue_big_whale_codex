@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+.env
+.env.*
+exported-frames/
+*.zip
+GITHUB_UPLOAD_RESULT.json

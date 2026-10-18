@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "checked_on": "2026-10-18",
+  "environment": {
+    "os": "Linux",
+    "python": "3.13.5",
+    "pillow": "12.3.0",
+    "node": "v22.16.0"
+  },
+  "python_test_count": 38,
+  "preview_logic_check_count": 13,
+  "checks": [
+    {
+      "name": "python-unit-tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 2.875
+    },
+    {
+      "name": "asset-validation",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/build.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 2.953
+    },
+    {
+      "name": "install-package-verification",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/petctl.py",
+        "verify"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.658
+    },
+    {
+      "name": "preview-logic-smoke",
+      "command": [
+        "node",
+        "tests/preview-smoke.cjs"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.03
+    },
+    {
+      "name": "preview-syntax",
+      "command": [
+        "node",
+        "--check",
+        "preview.js"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "name": "preview-data-syntax",
+      "command": [
+        "node",
+        "--check",
+        "preview-data.js"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "name": "bash-syntax",
+      "command": [
+        "bash",
+        "-n",
+        "install.sh",
+        "install.command",
+        "publish.command"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "name": "publish-dry-run",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "tools/publish.py",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "seconds": 0.698
+    }
+  ],
+  "visual_qa": {
+    "method": "inspection of contact sheets cropped from actual final atlas pixels",
+    "native_contact": "qa/native-contact.png",
+    "outfit_source_overviews": 3,
+    "obvious_edge_clipping_observed": false
+  },
+  "codex_desktop_runtime_tested": false,
+  "real_browser_render_tested": false,
+  "macos_windows_runtime_tested": false,
+  "target_contract": "legacy-v1-8x9",
+  "github": {
+    "repository": "Vertein-hy/whale-codex-pets",
+    "created": false,
+    "uploaded": false,
+    "default_visibility": "private",
+    "blocker": "Connected GitHub actions have no repository-creation operation. Local GitHub CLI is absent and no local authenticated GitHub session is available.",
+    "other_repositories_modified": false
+  },
+  "limitations": [
+    "Native states select 4–8 keyframes, not all 24 source frames.",
+    "Task working/review reuse different idle segments.",
+    "Left movement mirrors asymmetric accessories.",
+    "Client loading and native event triggers need local Codex verification."
+  ],
+  "delivery": {
+    "mode": "zip-download",
+    "github_upload_requested_now": false,
+    "note": "User requested a downloadable ZIP instead of GitHub upload."
+  }
+}

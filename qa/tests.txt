@@ -1,0 +1,43 @@
+test_all_native_packages_pass (test_assets.AssetTests.test_all_native_packages_pass) ... ok
+test_counts_and_timing_match (test_assets.AssetTests.test_counts_and_timing_match) ... ok
+test_desktop_runtime_not_falsely_claimed (test_assets.AssetTests.test_desktop_runtime_not_falsely_claimed) ... ok
+test_mirror_is_explicit (test_assets.AssetTests.test_mirror_is_explicit) ... ok
+test_native_cell_count_and_padding (test_assets.AssetTests.test_native_cell_count_and_padding) ... ok
+test_selected_indices_in_source_range (test_assets.AssetTests.test_selected_indices_in_source_range) ... ok
+test_source_frames_648_verified (test_assets.AssetTests.test_source_frames_648_verified) ... ok
+test_state_order_is_fixed (test_assets.AssetTests.test_state_order_is_fixed) ... ok
+test_working_is_not_foot_running (test_assets.AssetTests.test_working_is_not_foot_running) ... ok
+test_all_source_packages_verify (test_petctl.InstallerTests.test_all_source_packages_verify) ... ok
+test_checksum_tamper_detected_before_write (test_petctl.InstallerTests.test_checksum_tamper_detected_before_write) ... ok
+test_codex_home_env (test_petctl.InstallerTests.test_codex_home_env) ... ok
+test_destination_file_refused (test_petctl.InstallerTests.test_destination_file_refused) ... ok
+test_dry_run_does_not_create_home (test_petctl.InstallerTests.test_dry_run_does_not_create_home) ... ok
+test_duplicate_selection_refused (test_petctl.InstallerTests.test_duplicate_selection_refused) ... ok
+test_existing_lock_blocks_write (test_petctl.InstallerTests.test_existing_lock_blocks_write) ... ok
+test_existing_modified_requires_force (test_petctl.InstallerTests.test_existing_modified_requires_force) ... ok
+test_explicit_home_wins (test_petctl.InstallerTests.test_explicit_home_wins) ... ok
+test_force_dry_run_preserves_existing (test_petctl.InstallerTests.test_force_dry_run_preserves_existing) ... ok
+test_force_makes_complete_backup (test_petctl.InstallerTests.test_force_makes_complete_backup) ... ok
+test_foreign_empty_directory_refused (test_petctl.InstallerTests.test_foreign_empty_directory_refused) ... ok
+test_idempotent_install (test_petctl.InstallerTests.test_idempotent_install) ... ok
+test_install_three_only_two_files_each (test_petctl.InstallerTests.test_install_three_only_two_files_each) ... ok
+test_no_touch_config_and_other_pet (test_petctl.InstallerTests.test_no_touch_config_and_other_pet) ... ok
+test_reject_unknown_and_traversal_ids (test_petctl.InstallerTests.test_reject_unknown_and_traversal_ids) ... ok
+test_staging_copy_failure_keeps_existing (test_petctl.InstallerTests.test_staging_copy_failure_keeps_existing) ... ok
+test_swap_failure_rolls_back_backup (test_petctl.InstallerTests.test_swap_failure_rolls_back_backup) ... ok
+test_symlink_pet_refused (test_petctl.InstallerTests.test_symlink_pet_refused) ... ok
+test_symlink_pets_root_refused (test_petctl.InstallerTests.test_symlink_pets_root_refused) ... ok
+test_uninstall_dry_run_is_noop (test_petctl.InstallerTests.test_uninstall_dry_run_is_noop) ... ok
+test_uninstall_missing_is_noop (test_petctl.InstallerTests.test_uninstall_missing_is_noop) ... ok
+test_uninstall_moves_to_backup (test_petctl.InstallerTests.test_uninstall_moves_to_backup) ... ok
+test_wrong_identity_refused_even_force (test_petctl.InstallerTests.test_wrong_identity_refused_even_force) ... ok
+test_invalid_repo_rejected (test_petctl.PublishTests.test_invalid_repo_rejected) ... ok
+test_private_by_default (test_petctl.PublishTests.test_private_by_default) ... ok
+test_public_requires_explicit_option (test_petctl.PublishTests.test_public_requires_explicit_option) ... ok
+test_publication_allowlist_excludes_secrets (test_petctl.PublishTests.test_publication_allowlist_excludes_secrets) ... ok
+test_publish_dry_run_uses_no_network (test_petctl.PublishTests.test_publish_dry_run_uses_no_network) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 2.236s
+
+OK

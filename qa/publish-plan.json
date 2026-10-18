@@ -1,0 +1,30 @@
+{
+  "repository": "Vertein-hy/whale-codex-pets",
+  "visibility": "private",
+  "branch": "main",
+  "operation": "create-new-and-push",
+  "touch_existing_repositories": false,
+  "paths": [
+    "README.md",
+    "QUICKSTART.md",
+    "ASSET-NOTICE.md",
+    ".gitignore",
+    ".gitattributes",
+    "config.json",
+    "checksums.json",
+    "install.sh",
+    "install.command",
+    "install.ps1",
+    "publish.command",
+    "preview.html",
+    "preview.js",
+    "preview-data.js",
+    "pets",
+    "assets",
+    "docs",
+    "tools",
+    "tests",
+    "qa"
+  ],
+  "performed": false
+}

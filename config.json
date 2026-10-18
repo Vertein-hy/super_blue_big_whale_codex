@@ -1,0 +1,264 @@
+{
+  "schema": 1,
+  "project": "whale-codex-pets",
+  "displayName": "小鲸 · Codex 桌宠",
+  "contract": {
+    "name": "legacy-v1-8x9",
+    "atlas": [
+      1536,
+      1872
+    ],
+    "cell": [
+      192,
+      208
+    ],
+    "columns": 8,
+    "rows": 9,
+    "source": "https://github.com/openai/skills/blob/main/skills/.curated/hatch-pet/references/codex-pet-contract.md",
+    "contract_blob_sha": "6dc57cc14bbcb9a5c8455e0a3161e0eb76fded3d",
+    "row_spec": "https://github.com/openai/skills/blob/main/skills/.curated/hatch-pet/references/animation-rows.md",
+    "row_spec_blob_sha": "79b63b20d71205fae13f89b60dc2f6d71b00a172",
+    "checked_on": "2026-10-18"
+  },
+  "pets": [
+    {
+      "id": "whale-knit",
+      "displayName": "小鲸 · 白色针织装",
+      "description": "蓝发鲸尾女孩，穿奶白针织毛衣，眨眼、挥手和软萌小跳。",
+      "source_outfit": "01_knit"
+    },
+    {
+      "id": "whale-cape",
+      "displayName": "小鲸 · 棕白披肩裙装",
+      "description": "蓝发鲸尾女孩，穿棕白披肩裙，安静陪伴，挥手等你回应。",
+      "source_outfit": "02_cape"
+    },
+    {
+      "id": "whale-winter",
+      "displayName": "小鲸 · 蓝色鲸鱼冬装",
+      "description": "戴鲸鱼帽的蓝发女孩，围着软绒围巾，坐着等你，开心小蹦。",
+      "source_outfit": "03_whale"
+    }
+  ],
+  "rows": [
+    {
+      "row": 0,
+      "state": "idle",
+      "label": "安静眨眼",
+      "source_action": "01_idle",
+      "frames": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        23
+      ],
+      "durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "mirror": false
+    },
+    {
+      "row": 1,
+      "state": "running-right",
+      "label": "向右小碎步",
+      "source_action": "02_walk",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "mirror": false
+    },
+    {
+      "row": 2,
+      "state": "running-left",
+      "label": "向左小碎步",
+      "source_action": "02_walk",
+      "frames": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "mirror": true
+    },
+    {
+      "row": 3,
+      "state": "waving",
+      "label": "软萌挥手",
+      "source_action": "05_wave",
+      "frames": [
+        0,
+        6,
+        13,
+        23
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "mirror": false
+    },
+    {
+      "row": 4,
+      "state": "jumping",
+      "label": "开心小蹦",
+      "source_action": "04_jump",
+      "frames": [
+        5,
+        9,
+        12,
+        16,
+        23
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "mirror": false
+    },
+    {
+      "row": 5,
+      "state": "failed",
+      "label": "哎呀，捂脸了",
+      "source_action": "09_surprise",
+      "frames": [
+        0,
+        4,
+        7,
+        10,
+        12,
+        15,
+        18,
+        23
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "mirror": false
+    },
+    {
+      "row": 6,
+      "state": "waiting",
+      "label": "坐着等你回应",
+      "source_action": "06_sit",
+      "frames": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20
+      ],
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "mirror": false
+    },
+    {
+      "row": 7,
+      "state": "running",
+      "label": "歪头思考",
+      "source_action": "01_idle",
+      "frames": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "mirror": false
+    },
+    {
+      "row": 8,
+      "state": "review",
+      "label": "认真看看",
+      "source_action": "01_idle",
+      "frames": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "mirror": false
+    }
+  ],
+  "limitations": [
+    "This is the verified legacy v1 8x9 format, not a v2 8x11 pet.",
+    "Task-working/review animations reuse selected idle frames; no typing or code-review art was generated.",
+    "Native left movement mirrors accessories as well as the character.",
+    "24-frame originals are retained losslessly in source sheets, not played as 24 frames by the native client."
+  ]
+}

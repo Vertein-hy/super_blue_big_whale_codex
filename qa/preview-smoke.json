@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "method": "Node VM with minimal DOM and local image-path verification",
+  "real_browser_render_tested": false
+}

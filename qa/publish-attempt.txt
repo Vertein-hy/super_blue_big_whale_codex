@@ -1,0 +1,1 @@
+Error: gh is not installed. Install Git and GitHub CLI; then run gh auth login on your computer. Never paste a token in chat.
